@@ -12,7 +12,7 @@ namespace RepositoryPatternExample.Data
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseSqlServer("Server=.\\SQLExpress;Database=ormexample;Trusted_Connection=true;TrustServerCertificate=true; ");
+            optionsBuilder.UseSqlServer("Server=.\\SQLExpress;Database=ormexample;Trusted_Connection=true;TrustServerCertificate=true;");
         }
 
         public DbSet<WeatherForecast> Forecasts { get; set; }
