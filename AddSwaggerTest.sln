@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.810.25
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestApi", "RestApi\RestApi.csproj", "{B03FFC79-FD83-4339-B578-162B73FCEBA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepositoryPatternExample", "RepositoryPatternExample\RepositoryPatternExample.csproj", "{806BEEA3-DA17-427D-8BE5-3D4CFE6B8825}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B03FFC79-FD83-4339-B578-162B73FCEBA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B03FFC79-FD83-4339-B578-162B73FCEBA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B03FFC79-FD83-4339-B578-162B73FCEBA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B03FFC79-FD83-4339-B578-162B73FCEBA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{806BEEA3-DA17-427D-8BE5-3D4CFE6B8825}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{806BEEA3-DA17-427D-8BE5-3D4CFE6B8825}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{806BEEA3-DA17-427D-8BE5-3D4CFE6B8825}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{806BEEA3-DA17-427D-8BE5-3D4CFE6B8825}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {55845750-BFD0-4101-A16F-39CB23C41EBE}
+	EndGlobalSection
+EndGlobal

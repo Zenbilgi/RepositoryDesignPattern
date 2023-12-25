@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "/Users/baytas/.dotnet/store/|arch|/|tfm|",
+      "/Users/baytas/.nuget/packages"
+    ]
+  }
+}
