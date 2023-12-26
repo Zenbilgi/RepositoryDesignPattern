@@ -1,4 +1,8 @@
-﻿using RepositoryPatternExample.Services.WeatherForecastService;
+﻿using Microsoft.Extensions.Configuration;
+using RepositoryPatternExample.Data;
+using RepositoryPatternExample.Services.WeatherForecastService;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +17,10 @@ builder.Services.AddSwaggerGen();
 //builder.Services.AddScoped<IWeatherForecastService, WeatherForecastServiceExtended>();
 builder.Services.AddScoped<IWeatherForecastService, WeatherForecastServiceDbContext>();
 //builder.Services.AddSingleton<IWeatherForecastService, WeatherForecastServiceDbContext>();
+
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddDbContext<DataContext>(x => x.UseSqlServer(connectionString));
+
 
 var app = builder.Build();
 

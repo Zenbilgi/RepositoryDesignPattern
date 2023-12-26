@@ -1,16 +1,20 @@
 ﻿using System;
+using RepositoryPatternExample.Data;
 
 namespace RepositoryPatternExample.Services.WeatherForecastService
 {
 	public class WeatherForecastServiceDbContext : IWeatherForecastService
 	{
-		public WeatherForecastServiceDbContext()
+        private readonly DataContext _dataContext;
+
+        public WeatherForecastServiceDbContext(DataContext dataContext)
 		{
-		}
+            _dataContext = dataContext;
+        }
 
         public IEnumerable<WeatherForecast> Get()
         {
-            throw new NotImplementedException();
+            return _dataContext.Forecasts.ToArray();
         }
     }
 }
