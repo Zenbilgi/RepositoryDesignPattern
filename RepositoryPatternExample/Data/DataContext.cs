@@ -1,12 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using RepositoryPatternExample.Models;
 
 namespace RepositoryPatternExample.Data
 {
-	public class DataContext : DbContext
-	{
-		public DataContext(DbContextOptions<DataContext> options) : base(options)
-		{
-		}
+    public class DataContext : DbContext
+    {
+        public DataContext(DbContextOptions<DataContext> options) : base(options)
+        {
+        }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -25,6 +26,7 @@ namespace RepositoryPatternExample.Data
         }
 
         public DbSet<WeatherForecast> Forecasts { get; set; }
+        public DbSet<Customer> Customers { get; set; }
     }
 }
 

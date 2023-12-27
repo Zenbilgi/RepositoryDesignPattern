@@ -1,5 +1,4 @@
-﻿using System;
-using RepositoryPatternExample.Data;
+﻿using RepositoryPatternExample.Data;
 
 namespace RepositoryPatternExample.Services.WeatherForecastService
 {

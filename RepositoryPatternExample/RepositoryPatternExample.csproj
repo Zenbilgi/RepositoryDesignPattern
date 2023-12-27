@@ -21,12 +21,16 @@
 
   <ItemGroup>
     <None Remove="Services\" />
-    <None Remove="Services\WeatherForecastService\" />
     <None Remove="Data\" />
+    <None Remove="Models\" />
+    <None Remove="Services\CustomerService\" />
+    <None Remove="Services\WeatherForecastService\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Services\" />
-    <Folder Include="Services\WeatherForecastService\" />
     <Folder Include="Data\" />
+    <Folder Include="Models\" />
+    <Folder Include="Services\CustomerService\" />
+    <Folder Include="Services\WeatherForecastService\" />
   </ItemGroup>
 </Project>

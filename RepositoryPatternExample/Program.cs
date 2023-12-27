@@ -1,8 +1,8 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿global using RepositoryPatternExample.Models;
+using Microsoft.EntityFrameworkCore;
 using RepositoryPatternExample.Data;
 using RepositoryPatternExample.Services.WeatherForecastService;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Options;
+using RepositoryPatternExample.Services.CustomerService;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +16,7 @@ builder.Services.AddSwaggerGen();
 //builder.Services.AddScoped<IWeatherForecastService, WeatherForecastService>();
 //builder.Services.AddScoped<IWeatherForecastService, WeatherForecastServiceExtended>();
 builder.Services.AddScoped<IWeatherForecastService, WeatherForecastServiceDbContext>();
+builder.Services.AddScoped<ICustomerService, CustomerServiceDbContext>();
 //builder.Services.AddSingleton<IWeatherForecastService, WeatherForecastServiceDbContext>();
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");

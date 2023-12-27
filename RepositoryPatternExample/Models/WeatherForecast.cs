@@ -1,4 +1,4 @@
-﻿namespace RepositoryPatternExample;
+﻿namespace RepositoryPatternExample.Models;
 
 [System.Diagnostics.DebuggerDisplay("Weather Forecast {TemperatureC}", Name = "{Summary}")]
 public class WeatherForecast

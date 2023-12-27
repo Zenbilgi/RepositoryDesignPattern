@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace RepositoryPatternExample.Services.WeatherForecastService
+﻿namespace RepositoryPatternExample.Services.WeatherForecastService
 {
 	public class WeatherForecastServiceExtended : IWeatherForecastService
 	{

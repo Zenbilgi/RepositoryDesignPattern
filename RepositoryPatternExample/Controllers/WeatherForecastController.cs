@@ -1,10 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using RepositoryPatternExample.Services.WeatherForecastService;
+using RepositoryPatternExample.Models;
 
 namespace RepositoryPatternExample.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("api/[controller]")]
 public class WeatherForecastController : ControllerBase
 {
 
