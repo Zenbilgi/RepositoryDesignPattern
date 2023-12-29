@@ -20,8 +20,7 @@ builder.Services.AddScoped<ICustomerService, CustomerServiceDbContext>();
 //builder.Services.AddSingleton<IWeatherForecastService, WeatherForecastServiceDbContext>();
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<DataContext>(x => x.UseSqlServer(connectionString));
-
+builder.Services.AddDbContext<DataContext>(options => options.UseSqlServer(connectionString));
 
 var app = builder.Build();
 
