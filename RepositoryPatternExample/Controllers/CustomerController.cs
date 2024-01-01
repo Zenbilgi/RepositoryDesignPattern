@@ -1,7 +1,9 @@
 ﻿using Azure.Core;
 using Microsoft.AspNetCore.Mvc;
+using RepositoryPatternExample.DTOs;
 using RepositoryPatternExample.Models;
 using RepositoryPatternExample.Services.CustomerService;
+using System.Linq;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -49,12 +51,31 @@ public class CustomerController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<ActionResult<Customer>> Add(Customer customer)
+    public async Task<ActionResult<Customer>> Add(CustomerCreateDto request)
     {
-        if (customer == null)
+        // Check if the request model is valid
+        if (!ModelState.IsValid)
         {
             return BadRequest("Invalid customer data");
         }
+
+        var customer = new Customer
+        {
+            Name = request.Name,
+            FirstName = request.FirstName,
+            LastName = request.LastName,
+            Place = request.Place
+        };
+
+        var addresses = request.Addresses.Select(a => new Address
+        {
+            Country = a.Country,
+            Description = a.Description,
+            Customer = customer
+        }).ToList();
+
+        customer.Address = addresses;
+
         var result = await _customerService.Add(customer);
         if (result is null)
             return NotFound(); // Return 404 Not Found if no customers are found

@@ -1,22 +1,29 @@
 ﻿<Properties StartupConfiguration="{806BEEA3-DA17-427D-8BE5-3D4CFE6B8825}|https">
-  <MonoDevelop.Ide.Workbench ActiveDocument="RepositoryPatternExample/Services/CustomerService/CustomerServiceDbContext.cs">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.RepositoryPatternExample PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.ItemProperties.RestApi PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="RepositoryPatternExample/DTOs/CreateAddressDto.cs">
     <Files>
-      <File FileName="RepositoryPatternExample/Services/CustomerService/ICustomertService.cs" Line="13" Column="23" />
-      <File FileName="RepositoryPatternExample/Services/CustomerService/CustomerServiceDbContext.cs" Line="79" Column="29" />
-      <File FileName="RepositoryPatternExample/Controllers/CustomerController.cs" Line="65" Column="22" />
-      <File FileName="RepositoryPatternExample/Data/DataContext.cs" Line="1" Column="1" />
-      <File FileName="RepositoryPatternExample/Program.cs" Line="1" Column="1" />
+      <File FileName="RepositoryPatternExample/DTOs/CustomerCreateDto.cs" />
+      <File FileName="RepositoryPatternExample/Models/Customer.cs" />
+      <File FileName="RepositoryPatternExample/DTOs/CreateAddressDto.cs" Line="7" Column="1" />
+      <File FileName="RepositoryPatternExample/Models/Address.cs" />
+      <File FileName="RepositoryPatternExample/Controllers/CustomerController.cs" />
+      <File FileName="RepositoryPatternExample/Services/CustomerService/CustomerServiceDbContext.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="AddSwaggerTest" expanded="True">
             <Node name="RepositoryPatternExample" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" />
+              <Node name="DTOs" expanded="True">
+                <Node name="CreateAddressDto.cs" selected="True" />
               </Node>
-              <Node name="Controllers" expanded="True" />
-              <Node name="Data" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
               <Node name="Services" expanded="True">
@@ -29,12 +36,4 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.RepositoryPatternExample PreferredExecutionTarget="/Applications/Safari.app" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.RestApi PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

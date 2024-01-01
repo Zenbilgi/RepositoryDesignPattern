@@ -20,13 +20,19 @@ namespace RepositoryPatternExample.Services.CustomerService
 
         public async Task<IEnumerable<Customer>> ListAll()
         {
-            var customers = await _dataContext.Customers.ToListAsync();
+            var customers = await _dataContext.Customers
+                .Include(a => a.Address)
+                .ToListAsync();
+
             return customers;
         }
 
         public async Task<Customer?> GetById(int id)
         {
-            var customer = await _dataContext.Customers.FindAsync(id);
+            var customer = await _dataContext.Customers
+                .Include(a => a.Address)
+                .FirstOrDefaultAsync(c => c.Id == id);
+
             if (customer is null)
                 return null;
 

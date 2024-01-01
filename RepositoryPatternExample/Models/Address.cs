@@ -1,4 +1,6 @@
-﻿namespace RepositoryPatternExample.Models;
+﻿using System.Text.Json.Serialization;
+
+namespace RepositoryPatternExample.Models;
 
 public class Address
 {
@@ -10,6 +12,7 @@ public class Address
 
     public int CustomerId { get; set; }
 
+    [JsonIgnore]
     public Customer? Customer { get; set; }
-    }
+}
 
